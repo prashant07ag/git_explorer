@@ -124,6 +124,7 @@ body{
 
 .profile-text {
   flex-grow: 1;
+  margin-left: 30px;
 }
 
 .title {
@@ -240,6 +241,17 @@ body{
   margin-bottom: 8px;
 }
 
+.footer {
+  text-align: center;
+  padding: 5px ;
+  background-color: var(--surface-variant-dark);
+  color: var(--on-surface-variant-dark);
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .brief-outline {
   text-align: center;
   padding: 20px;
@@ -256,9 +268,13 @@ body{
   margin-top: 10px;
 }
 
-.img-holder img {
-  width: 500px;
+.img-holder2 img {
+  width: 410px;
   border-radius: 50%;
+}
+.pagination {
+  text-align: center;
+  margin: 20px; /* Add margin to the pagination section */
 }
 
 .pagination button {
@@ -291,55 +307,51 @@ body{
   100% { transform: rotate(360deg); }
 }
 
+
 @media (max-width: 768px) {
-  .profile {
+  .profile-details {
     flex-direction: column;
     align-items: center;
   }
 
   .repositories {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 15px;
   }
 
   .loader {
-    margin: 0 auto; 
-  }
-  .navbar-brand,
-  .form-control,
-  .btn-outline-primary {
-    width: 100%; 
-    align-items: center;
+    margin: 0 auto;
   }
 
-  .profiledata {
-    margin-top: 10px;
-    text-align: center;
+  .navbar-brand {
+    width: 100%;
+  }
+
+  .profile-text {
     margin-left: 0;
+    text-align: center;
   }
 
   .pagination {
-    text-align: center; 
+    text-align: center;
   }
 
   .brief-outline {
-    text-align: center;
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
 
   .brief-outline p {
-    font-weight: bold;
     margin-bottom: 5px;
   }
 
   .img-holder img {
-    width: 100%; /* Make the image responsive by setting its width to 100% */
-    max-width: 300px; /* Set a maximum width for the image */
-    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
   }
 
   .avtar-circle {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
   }
 }
-

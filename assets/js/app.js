@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function getUserRepositories(username) {
            try {
-        const perPage = 50; // Number of repositories per page
+        const perPage = 10; // Number of repositories per page
         let page = 1;
         let allRepos = [];
 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const repositoriesData = await response.json();
 
             // Break the loop if no more repositories or if you reached a certain limit
-            if (repositoriesData.length === 0 || allRepos.length >= 200) {
+            if (repositoriesData.length === 0 || allRepos.length >= 100) {
                 break;
             }
 
